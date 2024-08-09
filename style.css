@@ -238,7 +238,6 @@ section .title::after{
     color: crimson;
 }
 .about .about-content .right p{
-     margin-bottom: 20px; /* Adjust the value to control the space between paragraphs */
     text-align: justify;
 }
 .about .about-content .right a{
@@ -318,7 +317,6 @@ section .title::after{
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
-     margin-bottom: 20px; /* Adjust the value to control the space between paragraphs */
     text-align: justify;
 }
 .skills .skills-content .left a{
@@ -456,7 +454,6 @@ section .title::after{
     margin-bottom: 10px;
 }
 .contact .contact-content .left p{
-     margin-bottom: 20px; /* Adjust the value to control the space between paragraphs */
     text-align: justify;
 }
 .contact .contact-content .left .icons{
