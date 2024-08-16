@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #333333;
+    margin-top: 40px;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* Project Navigation Container */
+.project-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allows wrapping of project links on smaller screens */
+}
+
+/* Individual Project Links */
+.project-link {
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px; /* Adds space between project links */
+    text-align: center;
+}
+
+/* Hover Effect for Project Links */
+.project-link:hover {
+    background-color: #e74c3c;
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .project-nav {
+        justify-content: center;
+    }
+
+    .project-link {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Contact Section Styles */
+#contact {
+    background-color: #f7f9fc;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#contact h2 {
+    color: #3498db;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(11, 6, 6);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer p{
+    color: #e74c3c;
+}
+footer 
+
+
+/* Hover and Focus Effects */
+nav a:hover, nav a:focus {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-nav {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul li {
+        font-size: 1em;
+    }
+}
