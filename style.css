@@ -368,9 +368,7 @@ section .title::after{
         display: none; /* Hide the title on screens smaller than 768px */
     }
 
-    .skills .title::after {
-        display: none; /* Hide the ::after content if title is hidden */
-    }
+   
 }
 
 /* Additional Media Query for very small screens */
@@ -379,9 +377,7 @@ section .title::after{
         display: none; /* Ensure title is hidden on very small screens */
     }
 
-    .skills .title::after {
-        display: none; /* Ensure ::after content is hidden */
-    }
+    
 }
 
 
