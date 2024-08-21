@@ -274,8 +274,9 @@ section .title::after{
     background: none;
 }
 
+
 /* services section styling */
-/* services section styling */
+
 .services .title::after {
     content: "What I Offer";
 }
@@ -294,11 +295,16 @@ section .title::after{
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .services .card:hover {
-    background: #444;
+    background: #222;
     transform: scale(1.02);
 }
 .services .card .box {
     position: relative;
+}
+.services .card .box i {
+    color: crimson; /* Change icon color to crimson */
+    font-size: 40px; /* Adjust the size as needed */
+    margin-bottom: 15px;
 }
 .services .card .short-text {
     display: block;
