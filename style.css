@@ -392,7 +392,7 @@ section .title::after{
 
 
 /* teams section styling */
-/* Teams Section Styling */
+
 .teams {
     padding: 50px 0;
 }
@@ -427,7 +427,7 @@ section .title::after{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 450px; /* Increased height */
+    height: 550px; /* Increased height */
 }
 
 .teams .carousel .card:hover {
