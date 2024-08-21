@@ -104,7 +104,7 @@ h2 {
 
 .skills-nav {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .skills-link {
@@ -123,30 +123,41 @@ h2 {
     background-color: #0056b3;
 }
 
-.skills-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+#skills-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.skills-column {
-    flex: 1;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
-.skills-column h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
 }
 
 .skills-card {
     background: #fff;
     padding: 15px;
-    margin-bottom: 15px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
