@@ -419,7 +419,7 @@ section .title::after{
 .teams .carousel .card {
     background: #222;
     border-radius: 6px;
-    padding: 25px;
+    padding: 30px; /* Increased padding */
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -427,7 +427,7 @@ section .title::after{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 400px; /* Adjust height to keep cards uniform */
+    height: 450px; /* Increased height */
 }
 
 .teams .carousel .card:hover {
@@ -454,8 +454,8 @@ section .title::after{
 }
 
 .teams .carousel .card .project-img {
-    height: 150px;
-    width: 150px;
+    height: 180px; /* Increased image height */
+    width: 180px; /* Increased image width */
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
@@ -512,7 +512,6 @@ section .title::after{
 .owl-dot:hover {
     background: crimson!important;
 }
-
 
 
 /* contact section styling */
