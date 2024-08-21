@@ -313,6 +313,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+
 /* skills section styling */
 
  /* skills section styling */
@@ -325,16 +326,16 @@ section .title::after{
     gap: 20px;
 }
 .skills .skill {
-    background: #333;
+    background: black;
     border-radius: 6px;
     padding: 20px;
     width: calc(50% - 20px); /* Adjust width as needed */
-    color: #fff;
+    color: white;
     text-align: center;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .skills .skill:hover {
-    background: #444;
+    background: red;
     transform: scale(1.02);
 }
 .skills .skill-title {
