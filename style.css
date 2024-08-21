@@ -329,7 +329,7 @@ section .title::after{
     background: crimson;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -365,12 +365,12 @@ section .title::after{
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .skills .title {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 28px; /* Adjust font size for smaller screens */
         margin-bottom: 20px; /* Reduce margin for smaller screens */
     }
 
     .skills .title::after {
-        font-size: 18px; /* Adjust font size for ::after on smaller screens */
+        font-size: 20px; /* Adjust font size for ::after on smaller screens */
         bottom: -30px; /* Adjust position for ::after */
     }
 }
@@ -378,12 +378,12 @@ section .title::after{
 /* Additional Media Query for very small screens */
 @media (max-width: 480px) {
     .skills .title {
-        font-size: 18px; /* Further adjust font size for very small screens */
+        font-size: 24px; /* Further adjust font size for very small screens */
         margin-bottom: 10px; /* Reduce margin further for very small screens */
     }
 
     .skills .title::after {
-        font-size: 15px; /* Adjust font size for ::after on very small screens */
+        font-size: 20px; /* Adjust font size for ::after on very small screens */
         bottom: -20px; /* Adjust position for ::after */
     }
 }
