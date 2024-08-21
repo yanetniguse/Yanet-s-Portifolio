@@ -220,12 +220,19 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
-
 
 /* About section styling */
+.about .title{
+     text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
 .about .title::after{
     content: "who i am";
+     font-size: 24px;
+     display: block;
+     color: crimson;
+     margin-top: 10px;
 }
 .about .about-content .left{
     width: 45%;
@@ -316,9 +323,17 @@ section .title::after{
 
 /* skills section styling */
 
- /* skills section styling */
+.skills .title{
+     text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
 .skills .title::after {
     content: "Skills and Expertise";
+     font-size: 24px;
+     display: block;
+     color: crimson;
+     margin-top: 10px;
 }
 .skills .skills-content {
     display: flex;
