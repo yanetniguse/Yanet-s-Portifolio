@@ -71,3 +71,24 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+// drop down for services section
+
+document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', function() {
+        const fullText = this.previousElementSibling;
+        const shortText = fullText.previousElementSibling;
+        
+        if (fullText.style.display === 'none' || fullText.style.display === '') {
+            fullText.style.display = 'block';
+            shortText.style.display = 'none';
+            this.textContent = 'Show Less';
+        } else {
+            fullText.style.display = 'none';
+            shortText.style.display = 'block';
+            this.textContent = 'Read More';
+        }
+    });
+});
