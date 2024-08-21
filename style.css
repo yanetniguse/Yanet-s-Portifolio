@@ -388,37 +388,51 @@ section .title::after{
     width: 70%;
 }
 
+
+
+
 /* teams section styling */
-.teams .title::after{
+.teams .title::after {
     content: "Innovative Tech Solutions";
 }
-.teams .carousel .card{
+
+.teams .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    min-height: 300px; /* Ensure all cards have the same minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between elements */
 }
-.teams .carousel .card:hover{
+
+.teams .carousel .card:hover {
     background: crimson;
 }
-.teams .carousel .card .box{
+
+.teams .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Align elements vertically */
+    height: 100%; /* Take up full height of the card */
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+
+.teams .carousel .card:hover .box {
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+
+.teams .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+
+.teams .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -426,14 +440,38 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+
+.teams .carousel .card:hover img {
     border-color: #fff;
 }
-.owl-dots{
+
+.teams .carousel .card p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.teams .carousel .card a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745; /* Primary button color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.teams .carousel .card a:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+
+.owl-dot {
     height: 13px;
     width: 13px;
     margin: 0 5px;
@@ -442,14 +480,19 @@ section .title::after{
     border: 2px solid crimson!important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+
+.owl-dot.active {
     width: 35px;
     border-radius: 14px;
 }
+
 .owl-dot.active,
-.owl-dot:hover{
+.owl-dot:hover {
     background: crimson!important;
 }
+
+
+
 
 /* contact section styling */
 .contact .title::after{
