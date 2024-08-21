@@ -341,7 +341,7 @@ section .title::after{
     gap: 20px;
 }
 .skills .skill {
-    background: black;
+    background: #222;
     border-radius: 6px;
     padding: 20px;
     width: calc(50% - 20px); /* Adjust width as needed */
@@ -350,7 +350,7 @@ section .title::after{
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .skills .skill:hover {
-    background: red;
+    background: crimson;
     transform: scale(1.02);
 }
 .skills .skill-title {
