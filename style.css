@@ -362,23 +362,6 @@ section .title::after{
     bottom: -40px; /* Adjust the distance between title and ::after */
 }
 
-/* Hide the first title on small screens */
-@media (max-width: 768px) {
-    .skills .title {
-        display: none; /* Hide the title on screens smaller than 768px */
-    }
-
-   
-}
-
-/* Additional Media Query for very small screens */
-@media (max-width: 480px) {
-    .skills .title {
-        display: none; /* Ensure title is hidden on very small screens */
-    }
-
-    
-}
 
 
 
