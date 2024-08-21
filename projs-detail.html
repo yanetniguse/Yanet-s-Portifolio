@@ -257,7 +257,19 @@
     </section>
     
     
-    
+    <script>
+    document.querySelectorAll('.collapsible').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+</script>
+
     <footer>
         <p>&copy; 2024 Yanet Niguse Tesfay. All rights reserved.</p>
     </footer>
