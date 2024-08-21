@@ -499,6 +499,75 @@ section .title::after{
 
 
 /* contact section styling */
+
+/* Contact section styling */
+.contact {
+    background: #333;
+    padding: 50px 0;
+    color: #fff;
+}
+.contact .title::after {
+    content: "Let's Connect";
+}
+.contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+.contact .column.left {
+    flex: 1;
+}
+.contact .text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: crimson;
+}
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.contact .icons {
+    margin-top: 20px;
+}
+.contact .icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact .icons .row i {
+    font-size: 24px;
+    color: crimson;
+    margin-right: 15px;
+}
+.contact .icons .row .info {
+    display: flex;
+    flex-direction: column;
+}
+.contact .icons .row .head {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact .icons .row .sub-title {
+    font-size: 16px;
+    color: #ddd;
+}
+.contact .icons .row .sub-title a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact .icons .row .sub-title a:hover {
+    color: crimson;
+}
+
+
+
+
+/*
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -593,6 +662,10 @@ section .title::after{
   color: crimson;
   background: none;
 }
+
+*/
+
+
 /* footer section styling */
 footer{
     background: #111;
