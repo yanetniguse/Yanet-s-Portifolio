@@ -340,13 +340,13 @@ section .title::after{
 
 
 
-/* skills section styling */
+/* skills section styling 
 
 .skills .title{
      text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
-}
+} */
 .skills .title::after {
     content: "Skills and Expertise";
      font-size: 24px;
