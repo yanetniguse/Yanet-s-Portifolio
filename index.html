@@ -297,14 +297,16 @@
     <script>
   $(document).ready(function(){
     var owl = $(".owl-carousel");
+
     owl.owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
       dots: true,
-      autoplay: true,               // Enable autoplay
-      autoplayTimeout: 3000,        // Slide every 3 seconds
-      autoplayHoverPause: true,     // Pause on hover
+      autoplay: true,                 // Enables auto sliding
+      autoplayTimeout: 3000,          // Slide every 3 seconds
+      autoplayHoverPause: true,       // Pause on hover
+      smartSpeed: 800,                // Smooth animation speed
       responsive:{
         0:{ items:1 },
         600:{ items:2 },
@@ -315,13 +317,15 @@
     // Custom Navigation Events
     $(".custom-next").click(function(){
       owl.trigger('next.owl.carousel');
+      owl.trigger('play.owl.autoplay'); // Resume autoplay
     });
+
     $(".custom-prev").click(function(){
       owl.trigger('prev.owl.carousel');
+      owl.trigger('play.owl.autoplay'); // Resume autoplay
     });
   });
 </script>
-
 
 
 <!-- projects section end -->
