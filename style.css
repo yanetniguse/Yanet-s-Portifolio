@@ -385,12 +385,18 @@ section .title::after{
 
 /* skills section styling  */
 
+/* skills section styling */
+.skills {
+    padding: 50px 20px;
+    background-color: #111;
+    color: white;
+}
 
 .skills .title {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 50px; /* Increased margin to prevent overlap */
-    position: relative; /* Ensure that ::after is positioned correctly */
+    margin-bottom: 60px;
+    position: relative;
 }
 
 .skills .title::after {
@@ -399,48 +405,91 @@ section .title::after{
     display: block;
     color: crimson;
     margin-top: 10px;
-    position: absolute; /* Position the ::after content absolutely */
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center the ::after content */
-    bottom: -40px; /* Adjust the distance between title and ::after */
+    transform: translateX(-50%);
+    bottom: -35px;
 }
 
-
-
-
-    .skills .title::after {
-        font-size: 20px; /* Adjust font size for ::after on very small screens */
-        bottom: -20px; /* Adjust position for ::after */
-    }
-}
-
-
+/* Skill content wrapper */
 .skills .skills-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
+
+/* Individual skill box */
 .skills .skill {
     background: #222;
-    border-radius: 6px;
-    padding: 20px;
-    width: calc(50% - 20px); /* Adjust width as needed */
-    color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .skills .skill:hover {
     background: crimson;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
+
 .skills .skill-title {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
+    color: #fff;
 }
+
 .skills .skill-description {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Button container */
+.skills .button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .skills .skill {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .skills .title {
+        font-size: 28px;
+    }
+
+    .skills .title::after {
+        font-size: 18px;
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills .title {
+        font-size: 24px;
+    }
+
+    .skills .title::after {
+        font-size: 16px;
+        bottom: -20px;
+    }
+
+    .skills .skill-title {
+        font-size: 18px;
+    }
+
+    .skills .skill-description {
+        font-size: 14px;
+    }
 }
 
 
