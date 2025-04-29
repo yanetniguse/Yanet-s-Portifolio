@@ -495,128 +495,137 @@ section .title::after{
 
 
 
-/* teams section styling */
+/* Projects section styling */
 
-.teams {
-    padding: 30px 0;
+.projects {
+    padding: 40px 20px;
 }
 
-.teams .title {
+.projects .title {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.teams .title::after {
+.projects .title::after {
     content: "Innovative Tech Solutions";
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: crimson;
     margin-top: 10px;
 }
 
-.teams .carousel {
+.projects .carousel {
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.teams .carousel .card {
+.projects .card {
     background: #222;
     color: #fff;
-    border-radius: 6px;
-    padding: 10px; /* Increased padding */
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    height: 520px; /* Increased height */
+    height: 100%;
 }
 
-.teams .carousel .card:hover {
+.projects .card:hover {
     background: crimson;
+    transform: translateY(-5px);
 }
 
-.teams .carousel .card .box {
+.projects .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    text-align: center;
 }
 
-.teams .carousel .card:hover .box {
-    transform: scale(1.05);
+.projects .card .text {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
 }
 
-.teams .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.teams .carousel .card .project-img {
-    height: 120px; /* Increased image height */
-    width: 120px; /* Increased image width */
+.projects .card .project-img {
+    height: 120px;
+    width: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
-.teams .carousel .card:hover .project-img {
+.projects .card:hover .project-img {
     border-color: #fff;
 }
 
-.teams .carousel .card .btn {
-    display: inline-block;
+.projects .card .btn {
+    margin-top: 15px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
-    background-color: #28a745; /* Green color */
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 5px 0;
+    transition: background-color 0.3s ease;
 }
 
-.teams .carousel .card .btn:hover {
-    background-color: #218838; /* Darker green on hover */
+.projects .card .btn:hover {
+    background-color: #218838;
 }
 
-.teams .carousel .card .tech {
+.projects .card .tech {
     font-size: 14px;
-    color: #ddd;
+    color: #ccc;
     margin-top: 10px;
 }
 
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .projects .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .projects .title {
+        font-size: 28px;
+    }
+
+    .projects .title::after {
+        font-size: 18px;
+    }
 }
 
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
+@media (max-width: 480px) {
+    .projects .card {
+        padding: 15px;
+    }
+
+    .projects .text {
+        font-size: 20px;
+    }
+
+    .projects .card .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson!important;
-}
 
 
 /* contact section styling */
