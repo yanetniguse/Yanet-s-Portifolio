@@ -598,6 +598,26 @@ section .title::after{
 }
 
 
+.custom-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-nav button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-nav button:hover {
+  background-color: #45a049;
+}
 
 
 /* contact section styling */
