@@ -92,3 +92,12 @@ document.querySelectorAll('.read-more').forEach(button => {
         }
     });
 });
+
+
+$(".next").click(function() {
+  $(".carousel").trigger("next.owl.carousel");
+});
+
+$(".prev").click(function() {
+  $(".carousel").trigger("prev.owl.carousel");
+});
