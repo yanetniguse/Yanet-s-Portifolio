@@ -35,6 +35,19 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
+      strings: [
+  "Mastercard Foundation Scholar",
+  "2024 Millennium Fellow",
+  "Software Engineer & Tech Innovator",
+  "Founder of BreakFree Initiative",
+  "AI for Social Good Advocate"
+],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
        strings: [
   "Mastercard Foundation Scholar",
   "2024 Millennium Fellow",
@@ -42,33 +55,10 @@ $(document).ready(function(){
   "AppFactory-USIU Lead",
   "Software Engineer & Tech Innovator",
   "Women in Tech Advocate",
-  "AI for Social Good Enthusiast",
+  "AI for Social Good Advocate",
   "AIESEC Member & Global Volunteer",
-  "Community Empowerment Leader",
-  "Volunteer at Kiddanemihret Charity",
-  "Volunteer at Angaza Community Center"
-]
-,
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: [
-  "Mastercard Foundation Scholar",
-  "2024 Millennium Fellow",
-  "Founder of BreakFree Initiative",
-  "AppFactory-USIU Lead",
-  "Software Engineer & Tech Innovator",
-  "Women in Tech Advocate",
-  "AI for Social Good Enthusiast",
-  "AIESEC Member & Global Volunteer",
-  "Community Empowerment Leader",
-  "Volunteer at Kiddanemihret Charity",
-  "Volunteer at Angaza Community Center"
-]
-,
+  "Community Empowerment Leader"
+],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
