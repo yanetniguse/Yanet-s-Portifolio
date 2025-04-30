@@ -386,6 +386,7 @@ section .title::after{
 
 
 /* services section styling */
+/* services section styling */
 .services .title::after {
     content: "What I Offer";
 }
@@ -419,6 +420,12 @@ section .title::after{
     color: crimson; /* Icon color */
     font-size: 40px; /* Adjust the size as needed */
     margin-bottom: 15px;
+}
+
+.services .card .text {
+    color: #fff;  /* Set text color to white for visibility */
+    font-size: 1.25rem;  /* Adjust the size for prominence */
+    margin-bottom: 10px;
 }
 
 .services .card .short-text {
@@ -498,6 +505,7 @@ section .title::after{
   padding: 5px;
   cursor: pointer;
 }
+
 
 
 /*Leadership and community service section */
