@@ -35,14 +35,40 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Blogger", "Designer", "Freelancer", "Networker"],
+       strings: [
+  "Mastercard Foundation Scholar",
+  "2024 Millennium Fellow",
+  "Founder of BreakFree Initiative",
+  "AppFactory-USIU Lead",
+  "Software Engineer & Tech Innovator",
+  "Women in Tech Advocate",
+  "AI for Social Good Enthusiast",
+  "AIESEC Member & Global Volunteer",
+  "Community Empowerment Leader",
+  "Volunteer at Kiddanemihret Charity",
+  "Volunteer at Angaza Community Center"
+]
+,
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: [ "Developer", "Blogger", "Designer", "Freelancer", "Networker"],
+        strings: [
+  "Mastercard Foundation Scholar",
+  "2024 Millennium Fellow",
+  "Founder of BreakFree Initiative",
+  "AppFactory-USIU Lead",
+  "Software Engineer & Tech Innovator",
+  "Women in Tech Advocate",
+  "AI for Social Good Enthusiast",
+  "AIESEC Member & Global Volunteer",
+  "Community Empowerment Leader",
+  "Volunteer at Kiddanemihret Charity",
+  "Volunteer at Angaza Community Center"
+]
+,
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
