@@ -386,8 +386,6 @@ section .title::after{
 
 
 /* services section styling */
-
-/* services section styling */
 .services .title::after {
     content: "What I Offer";
 }
@@ -399,17 +397,17 @@ section .title::after{
 }
 
 .services .card {
-    background: #333;
+    background: #333; /* Dark background for cards */
     border-radius: 6px;
     padding: 20px;
     width: calc(33.33% - 20px);
-    color: #fff;  /* Ensuring the text color is white */
+    color: #fff;  /* White text color for better visibility */
     text-align: center;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .services .card:hover {
-    background: #222;
+    background: #222; /* Slightly lighter background on hover */
     transform: scale(1.02);
 }
 
@@ -426,13 +424,13 @@ section .title::after{
 .services .card .short-text {
     display: block;
     margin-bottom: 10px;
-    color: #f0f0f0;  /* Ensure visibility of short text */
+    color: #f0f0f0;  /* Light gray color for short text */
 }
 
 .services .card .full-text {
     display: none;
     margin-bottom: 10px;
-    color: #e0e0e0;  /* Slightly lighter color for full text */
+    color: #e0e0e0;  /* Slightly lighter gray for full text */
 }
 
 .services .card .read-more {
@@ -446,12 +444,24 @@ section .title::after{
 }
 
 .services .card .read-more:hover {
-    background: #ff6666;
+    background: #ff6666; /* Lighter red on hover */
 }
 
 .services .card .read-more:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #ff6666;  /* Add focus effect for accessibility */
+    box-shadow: 0 0 0 2px #ff6666;  /* Focus effect for accessibility */
+}
+
+/* Links in the services section */
+.services .card a {
+    color: #f1c40f; /* Light yellow for links, making them stand out against black */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.services .card a:hover {
+    color: #e67e22; /* Orange color on hover for better contrast */
 }
 
 /* Modal Styles */
@@ -472,8 +482,8 @@ section .title::after{
   display: block;
   width: 80%;
   max-width: 700px;
-  background-color: #fff;  /* Make the modal content background light */
-  color: #333;  /* Ensure text inside the modal is dark */
+  background-color: #fff;  /* Light background for modal */
+  color: #333;  /* Dark text inside modal */
   padding: 20px;
   border-radius: 8px;
 }
@@ -489,6 +499,10 @@ section .title::after{
   cursor: pointer;
 }
 
+
+/*Leadership and community service section */
+
+ /*certificates in the leadership section*/
 .certificate-img {
   display: block;
   max-width: 100%; /* Ensures responsiveness */
@@ -501,10 +515,6 @@ section .title::after{
 .certificate-img:hover {
   transform: scale(1.05); /* Slight zoom on hover */
 }
-
-/*Leadership and community service section */
-
-
 
 /*Leadership and community service section */
 
