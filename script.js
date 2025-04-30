@@ -51,12 +51,12 @@ $(document).ready(function(){
        strings: [
   "Mastercard Foundation Scholar",
   "2024 Millennium Fellow",
-  "Founder of BreakFree Initiative",
-  "AppFactory-USIU Lead",
+  "Founder, BreakFree Initiative",
+  "AppFactory Lead, USIU-Africa",
   "Software Engineer & Tech Innovator",
-  "Women in Tech Advocate",
-  "AI for Social Good Advocate",
-  "AIESEC Member & Global Volunteer",
+  "Rewriting the Code Member (Women in Tech Advocate)",
+  "AI for Social Good Enthusiast",
+  "AIESEC Global Volunteer",
   "Community Empowerment Leader"
 ],
         typeSpeed: 100,
