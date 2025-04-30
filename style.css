@@ -387,54 +387,71 @@ section .title::after{
 
 /* services section styling */
 
+/* services section styling */
 .services .title::after {
     content: "What I Offer";
 }
+
 .services .serv-content {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .services .card {
     background: #333;
     border-radius: 6px;
     padding: 20px;
     width: calc(33.33% - 20px);
-    color: #fff;
+    color: #fff;  /* Ensuring the text color is white */
     text-align: center;
     transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .services .card:hover {
     background: #222;
     transform: scale(1.02);
 }
+
 .services .card .box {
     position: relative;
 }
+
 .services .card .box i {
-    color: crimson; /* Change icon color to crimson */
+    color: crimson; /* Icon color */
     font-size: 40px; /* Adjust the size as needed */
     margin-bottom: 15px;
 }
+
 .services .card .short-text {
     display: block;
     margin-bottom: 10px;
+    color: #f0f0f0;  /* Ensure visibility of short text */
 }
+
 .services .card .full-text {
     display: none;
     margin-bottom: 10px;
+    color: #e0e0e0;  /* Slightly lighter color for full text */
 }
+
 .services .card .read-more {
     background: crimson;
-    color: #fff;
+    color: #fff;  /* White text for the button */
     border: none;
     padding: 10px 10px;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
 .services .card .read-more:hover {
     background: #ff6666;
+}
+
+.services .card .read-more:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff6666;  /* Add focus effect for accessibility */
 }
 
 /* Modal Styles */
@@ -455,6 +472,10 @@ section .title::after{
   display: block;
   width: 80%;
   max-width: 700px;
+  background-color: #fff;  /* Make the modal content background light */
+  color: #333;  /* Ensure text inside the modal is dark */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .close {
