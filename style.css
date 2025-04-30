@@ -233,57 +233,111 @@ section .title::after{
 
 
 /* About section styling */
-.about .title{
-     text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+/* Section background and spacing */
+.about {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
-.about .title::after{
-    content: "who i am";
-     font-size: 24px;
-     display: block;
-     color: crimson;
-     margin-top: 10px;
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.about .about-content .left{
-    width: 45%;
+.about .title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+.about .title::after {
+  content: "who i am";
+  font-size: 24px;
+  display: block;
+  color: crimson;
+  margin-top: 10px;
 }
-.about .about-content .right{
-    width: 55%;
+
+/* Flex content */
+.about-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.about-content .left {
+  flex: 1 1 300px;
 }
-.about .about-content .right .text span{
-    color: crimson;
+.about-content .left img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.about .about-content .right p{
-    text-align: justify;
+.about-content .right {
+  flex: 2 1 400px;
 }
-.about .about-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+.about-content .right .text {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
-.about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+.about-content .right .text span {
+  color: crimson;
 }
+
+/* Vision & Mission Box */
+.vision-mission {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.vision-mission h3 {
+  font-size: 1.2em;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+.vision-mission p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Buttons */
+.about .right a {
+  display: inline-block;
+  background: #0073e6;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.about .right a.secondary {
+  margin-left: 10px;
+}
+.about .right a:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content .right {
+    text-align: center;
+  }
+  .about .right a.secondary {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 
 
 /* services section styling */
