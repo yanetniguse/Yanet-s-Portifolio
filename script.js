@@ -52,15 +52,13 @@ $(document).ready(function(){
 
     var typed = new Typed(".typing-2", {
        strings: [
+  "Generation Google Scholar",
   "Mastercard Foundation Scholar",
   "2024 Millennium Fellow",
   "Founder, BreakFree Initiative",
-  "AppFactory Lead, USIU-Africa",
   "Software Engineer & Tech Innovator",
   "Rewriting the Code Member (Women in Tech Advocate)",
   "AI for Social Good Enthusiast",
-  "AIESEC Global Volunteer",
-  "Community Empowerment Leader"
 ],
         typeSpeed: 100,
         backSpeed: 60,
@@ -120,4 +118,5 @@ $(".next").click(function() {
 $(".prev").click(function() {
   $(".carousel").trigger("prev.owl.carousel");
 });
+
 
