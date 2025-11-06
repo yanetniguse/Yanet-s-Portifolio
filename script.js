@@ -40,7 +40,7 @@ $(document).ready(function(){
   "Mastercard Foundation Scholar",
           "kallamino special high school scholar",
   "2024 Millennium Fellow",
-          "Researcher",
+          "AI/ML Researcher",
   "Software Engineer & Tech Innovator",
   "Founder of BreakFree Initiative",
   "AI for Social Good Advocate"
@@ -59,6 +59,7 @@ $(document).ready(function(){
   "Software Engineer & Tech Innovator",
   "Rewriting the Code Member (Women in Tech Advocate)",
   "AI for Social Good Enthusiast",
+           "AI/ML Researcher"
 ],
         typeSpeed: 100,
         backSpeed: 60,
@@ -118,5 +119,6 @@ $(".next").click(function() {
 $(".prev").click(function() {
   $(".carousel").trigger("prev.owl.carousel");
 });
+
 
 
