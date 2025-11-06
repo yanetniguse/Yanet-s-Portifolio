@@ -36,8 +36,11 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
       strings: [
+          "Generation Google Scholar",
   "Mastercard Foundation Scholar",
+          "kallamino special high school scholar",
   "2024 Millennium Fellow",
+          "Researcher",
   "Software Engineer & Tech Innovator",
   "Founder of BreakFree Initiative",
   "AI for Social Good Advocate"
@@ -117,3 +120,4 @@ $(".next").click(function() {
 $(".prev").click(function() {
   $(".carousel").trigger("prev.owl.carousel");
 });
+
